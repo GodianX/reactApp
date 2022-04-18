@@ -2,15 +2,19 @@ import React from 'react'
 
 import { NavLink } from 'react-router-dom'
 import { ROUTES } from '../../routes/constants'
+import LoginForm from '../../components/LoginForm'
 
-function Login() {
+import './styles.scss'
+
+const Login = () => {
     return (
-        <>
+        <div className="LoginCentered">
             <h1>Welcome</h1>
-            <NavLink className="nav-link" to={ROUTES.REGISTER} exact="true">
+            <LoginForm />
+            <NavLink to={ROUTES.REGISTER} exact="true">
                 Join us
             </NavLink>
-        </>
+        </div>
     )
 }
 

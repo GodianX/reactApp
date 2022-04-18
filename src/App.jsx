@@ -1,11 +1,15 @@
 import React from 'react'
 import PageRoutes from './routes'
+import Footer from './components/Footer'
 
-function App() {
+const App = () => {
     return (
-        <div className="container pt-4">
-            <PageRoutes />
-        </div>
+        <>
+            <div className="app-container">
+                <PageRoutes />
+            </div>
+            <Footer />
+        </>
     )
 }
 

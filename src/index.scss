@@ -1,5 +1,9 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+$primary-color: #43688E;
+$secondary-color: #79ACB6 ;
+$spacing: 4px;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +11,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: $primary-color;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.btn-primary {
+  background-color: $primary-color !important;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: $secondary-color !important;
+  color: white;
+}
+
+a {
+  color: $primary-color;
+}
+
+a:hover {
+  color: $secondary-color;
 }

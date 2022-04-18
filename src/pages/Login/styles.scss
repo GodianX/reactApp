@@ -1,0 +1,12 @@
+.LoginCentered {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+
+  a {
+    text-align: center;
+  }
+}

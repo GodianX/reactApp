@@ -6,7 +6,7 @@ import { ROUTES } from './constants'
 import Login from '../pages/Login'
 import Registration from '../pages/Registration'
 
-function PageRoutes() {
+const PageRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
