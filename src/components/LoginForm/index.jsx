@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { INITIAL_LOGIN_STATE, LOGIN_FIELDS } from './constants'
+import { ROUTES } from '../../routes/constants'
 
 const LoginForm = () => {
     const [data, setData] = useState(INITIAL_LOGIN_STATE)
@@ -48,6 +50,10 @@ const LoginForm = () => {
                 >
                     Submit
                 </button>
+
+                <NavLink to={ROUTES.REGISTER} exact="true">
+                    Join us
+                </NavLink>
             </div>
         </form>
     )
